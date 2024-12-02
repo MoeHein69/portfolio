@@ -1,0 +1,301 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: #136ac2;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.navbar-nav .nav-link.active {
+  color: #00b87c; /* Green color for active link */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #00b87c;
+}
+
+/* Hero Section */
+#home {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+#home .container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#home h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#home p {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+#home .btn {
+  font-size: 1rem;
+  padding: 10px 25px;
+}
+
+/* About Section */
+#about {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+#about .about-img img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+#about .about-content .section-header {
+  margin-bottom: 40px;
+}
+
+#about .skills .progress {
+  height: 10px;
+}
+
+#about .skills .progress-bar {
+  height: 10px;
+}
+
+/* Service Section */
+#service {
+  background-color: #f1f1f1;
+  padding: 60px 0;
+}
+
+#service .service-item {
+  transition: transform 0.3s ease;
+}
+
+#service .service-item:hover {
+  transform: translateY(-10px);
+}
+
+#service .service-icon {
+  font-size: 40px;
+  color: #00b87c;
+}
+
+#service .service-text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+/* Education Section */
+#education {
+  padding: 80px 0;
+}
+
+#education .timeline {
+  border-left: 4px solid #00b87c;
+  padding-left: 20px;
+}
+
+#education .timeline-item {
+  margin-bottom: 20px;
+}
+
+#education .timeline-item .timeline-icon {
+  font-size: 30px;
+  color: #00b87c;
+}
+
+#education .timeline-item h5 {
+  font-size: 1.25rem;
+  margin-top: 10px;
+}
+
+/* Resume Section */
+#resume {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+}
+
+#resume .resume-image img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+/* Projects Section */
+#projects {
+  padding: 60px 0;
+}
+
+#projects .card {
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#projects .card-img-top {
+  border-radius: 10px;
+}
+
+#projects .card-body {
+  padding: 20px;
+}
+
+#projects .btn {
+  background-color: #00b87c;
+  color: white;
+}
+
+#projects .btn:hover {
+  background-color: #007c55;
+}
+
+/* Contact Section */
+#contact {
+  padding: 80px 0;
+  background-color: #343a40;
+}
+
+#contact h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+#contact .form-label {
+  color: #ffffff;
+}
+
+#contact .form-control {
+  background-color: #212529;
+  color: white;
+  border: 1px solid #444;
+}
+
+#contact .form-control:focus {
+  border-color: #00b87c;
+  box-shadow: none;
+}
+
+#contact .btn {
+  background-color: #00b87c;
+  color: white;
+}
+
+#contact .btn:hover {
+  background-color: #007c55;
+}
+
+
+/* Footer Section */
+footer {
+  background-color: #ffffff; /* Dark background */
+  color: #000000; /* White text */
+  padding: 40px 0;
+}
+
+footer .section-header h4 {
+  font-size: 1.25rem;
+  color: #ffffff; /* Ensures headings are white */
+  margin-bottom: 10px;
+}
+
+footer .section-header p {
+  color: #dcdcdc; /* Lighter gray for paragraph text */
+}
+
+footer .social-media a {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin: 0 15px;
+}
+
+footer .social-media a:hover {
+  color: #00b87c; /* Green color on hover */
+}
+
+footer .quick-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer .quick-links li {
+  margin-bottom: 10px;
+}
+
+footer .quick-links a {
+  color: #dcdcdc; /* Lighter gray for links */
+}
+
+footer .quick-links a:hover {
+  color: #ffffff; /* White color on hover for links */
+}
+
+/* Scroll-to-Top Sticky Button */
+.btn.btn-primary.rounded-circle {
+  display: flex; /* Ensures proper alignment for the arrow icon */
+  justify-content: center;
+  align-items: center;
+  width: 50px; /* Adjusted for better visibility */
+  height: 50px;
+  background-color: white;
+  color: #007bff; /* Matches Bootstrap's primary color */
+  text-align: center;
+  font-size: 24px;
+  position: fixed; /* Sticks to the viewport */
+  bottom: 20px; /* Adjusted for better spacing */
+  right: 20px;
+  text-decoration: none;
+  border-radius: 50%; /* Makes it a perfect circle */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+  z-index: 1000; /* Ensures it stays on top of other elements */
+  transition: transform 0.3s, background-color 0.3s; /* Smooth hover effect */
+}
+
+.btn.btn-primary.rounded-circle:hover {
+  background-color: #007bff; /* Primary color on hover */
+  color: white; /* White arrow icon on hover */
+  transform: scale(1.1); /* Slight enlargement */
+}
+
+.uniform-image {
+  width: 100%; /* Ensures the image fills the card width */
+  height: 200px; /* Sets a fixed height */
+  object-fit: cover; /* Maintains the aspect ratio while cropping excess */
+  border-radius: 5px; /* Optional: Adds a rounded corner effect */
+}
